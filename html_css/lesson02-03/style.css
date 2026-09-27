@@ -1,0 +1,31 @@
+body {
+    background-color: burlywood;
+    display: flex;
+    height: 100vh;
+    line-height: 100vh;
+}
+
+.mobile, .tablet, .pc {
+    color: blue;
+    font-size: 100px;
+    display: none;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .pc {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 740px) {
+    .tablet {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 739px) {
+    .mobile {
+        display: block;
+    }
+}
